@@ -8,9 +8,9 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/arctile-one',function(req,res)
+app.get('/article-one',function(req,res)
 {
-    res.send("Arctile one is requised");
+    res.send("Article one is requised");
 });
 
 app.get('/ui/style.css', function (req, res) {
