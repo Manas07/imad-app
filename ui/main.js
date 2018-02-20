@@ -1,15 +1,13 @@
 console.log('Loaded!');
 //Movinf the image
 var img=document.getElementById('madi');
+var counter=0;
 
-img.onClick=function()
-{
-    img.style.marginleft='100px';
-}
+
 var button=document.getElementById('counter');
 button.onClick=function()
 {
     counter=counter+1;
     var span=document.getElementById('count');
-    span.innerHTLM=counter.toString();
+    span.innerHTML=counter.toString();
 }
